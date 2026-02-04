@@ -25,7 +25,7 @@ This project was developed as part of The Skill Guru Foundation – Node.js Deve
 
 ### Create a Note
 **POST** `/notes`
-```json
+
 {
     "title": "Meeting Notes",
     "content": "Discussed hiring plan and deadlines"
