@@ -7,8 +7,8 @@ This project was developed as part of The Skill Guru Foundation – Node.js Deve
 # Features
 
 - Create and manage notes with proper validation
-- Return list of notes, sorted by most recently updated first
-- Partial updates are allowed
+- Return list of notes,, sorted by most recently updated first
+- Parital updates are allowed
 - Advanced search across note(title & content)
 - Rate limiting note creation
 
@@ -25,7 +25,7 @@ This project was developed as part of The Skill Guru Foundation – Node.js Deve
 
 ### Create a Note
 **POST** `/notes`
-
+```json
 {
     "title": "Meeting Notes",
     "content": "Discussed hiring plan and deadlines"
@@ -72,7 +72,7 @@ This project was developed as part of The Skill Guru Foundation – Node.js Deve
 - Prevents abuse while keeping other endpoints unrestricted
 
 #Search Implementation (Important)
-- This project uses MongoDB Atlas Search with a compound query
+- This project uses MongoDB Atlas Search with compound query
 - autocomplete -> to handle prefix search
 - e.g: "Meet" -> "Meeting"
 
@@ -82,25 +82,50 @@ This project was developed as part of The Skill Guru Foundation – Node.js Deve
 #Design Decision
 - Centralized error handling using a custom AppError
 - Standardized success responses using AppResponse
-- Search is designed to demonstrate basic intelligence, not just CRUD
+- Search designed to demonstrate basic intelligence, not just CRUD
 
 #Optional Enhancements
 - Added a `DELETE /notes/:id` endpoint as an optional extension to allow note removal.
 - This endpoint was not part of the core assignment requirements and is included to demonstrate completeness and standard RESTful practices.
 
-#Environment variable
-**Create a .env file (as)**
-``` text
+## Environment Variables
+
+Create a `.env` file as follows:
+
+```env
 PORT=8000
 MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/notes
 
-#Running the project
-    npm install
-    npm run dev
 
-#Assignment Context
-- This project was developed as part of a technical assignment for the Node.js Developer internship at The Skill Guru Foundation.
 
-#Author
-- Prakhar Gupta
-- Node.js & Backend Developer
+**Rule**:
+- `##` → section heading
+- ```env → start code block
+- ``` → end code block
+
+---
+
+### Running the Project Section
+
+```md
+## Running the Project
+
+```bash
+npm install
+npm run dev
+
+
+
+---
+
+
+```md
+## Assignment Context
+
+This project was developed as part of a technical assignment for the Node.js Developer internship at The Skill Guru Foundation.
+
+
+## Author
+
+**Prakhar Gupta**  
+Node.js & Backend Developer
