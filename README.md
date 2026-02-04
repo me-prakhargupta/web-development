@@ -164,9 +164,6 @@ npm install
 # Run in development mode
 npm run dev
 
-# Build (if applicable) and start
-npm run build
-npm start
 ```
 
 ---
