@@ -39,3 +39,15 @@ This project was developed as part of The Skill Guru Foundation – Node.js Deve
   "title": "Meeting Notes",
   "content": "Discussed hiring plan and deadlines"
 }
+
+
+
+---
+
+```md
+**Rules**
+- Title is required
+- Content is required
+- Trim extra spaces
+- Reject empty strings ("  ")
+- Rate limited to 5 requests per minute
